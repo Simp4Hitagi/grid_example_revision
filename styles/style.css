@@ -1,0 +1,18 @@
+
+/* Universal selectors */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+/* Layout */
+/* header and footer */
+header, footer {
+    background-color: aqua;
+}
+main {
+    border-color: blue;
+}
+/* grid allows us to make use of the outer layout and inner layout we use flexbox  */
