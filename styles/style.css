@@ -9,10 +9,60 @@
 }
 /* Layout */
 /* header and footer */
-header, footer {
+/* header, footer {
     background-color: aqua;
-}
+} */
 main {
-    border-color: blue;
+    background-color: blue;
 }
+/* body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr 100px;
+    min-height: 100vh;
+    text-align: center;
+    overflow-x: hidden;
+} */
+
+/* header, main, footer { */
+    /* min-width: 100vh; */
+    /* grid-column: 1 / 4;
+} */
+/* .container {
+    display: flex;
+} */
+
+
 /* grid allows us to make use of the outer layout and inner layout we use flexbox  */
+
+/* media query */
+/* @media screen and (max-width: 720px) {
+    .container {
+        flex-flow: column wrap;
+    }
+    .container img  {
+        width: 100%;
+
+    }
+} */
+
+@media (width <= 720px) {
+    .container  {
+        width: 100%;
+        transform: scale(0.5);
+    }
+    .container form {
+       margin-top: 30px;
+       display: flex;
+       gap: 10px;
+
+    }
+    .container p {
+        margin-top: 10px;
+    }
+
+    button {
+        margin-top: 30px;
+        height: 20%;
+    }
+}
